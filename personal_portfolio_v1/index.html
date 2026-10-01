@@ -1,28 +1,92 @@
-<header>
-    <h1>Optisware</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-    <nav>
-        <a href="#about"> About</a>
-        <a href="#services">Services </a>
-    </nav>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optisware | Software Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-    <main>
-        <section id="about">
-            <h2>About me</h2>
-            <p>Optisware is softeware development agency that help business to build awareness among others</p>
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Optisware</h1>
+
+            <nav aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section">
+            <p class="eyebrow">Software development agency</p>
+            <h2>Helping businesses grow with simple technology</h2>
+            <p>Optisware helps businesses build awareness and reach more people through thoughtful software development.
+            </p>
         </section>
 
-        <section id="services">
-
-
+        <section class="Box_container">
+            <h2 class="gallery-heading">A look at how we work</h2>
+            <div class="box_1">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    alt="Laptop displaying code on a desk">
+                <p>Building thoughtful websites</p>
+            </div>
+            <div class="box_2">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    alt="Coworkers collaborating around a laptop">
+                <p>Working together as a team</p>
+            </div>
+            <div class="box_3">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    alt="Team discussing ideas around a table">
+                <p>Planning practical solutions</p>
+            </div>
+            <div class="box_4">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    alt="Charts and graphs displayed on a computer screen">
+                <p>Helping businesses grow</p>
+            </div>
         </section>
 
+        <section id="services" class="section">
+            <h2>Our services</h2>
+            <div class="service-list">
+                <article class="service-card">
+                    <h3>Web development</h3>
+                    <p>Accessible websites that are easy for your customers to use.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Business tools</h3>
+                    <p>Practical software that helps your team work more efficiently.</p>
+                </article>
+            </div>
+        </section>
+
+        <form>
+            <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" required minlength="2" />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send message</button>
+        </form>
 
     </main>
 
-    <footer>
-        <p>Contact Optisware at optisware@gmail.com</p>
+    <footer class="site-footer">
+        <p>Contact Optisware at <a href="mailto:optisware@gmail.com">optisware@gmail.com</a></p>
     </footer>
 </body>
+
+</html>
